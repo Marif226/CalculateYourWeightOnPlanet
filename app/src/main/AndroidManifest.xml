@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculateYourAgeOnPlanet">
         <activity
+            android:name=".NeptuneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UranusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SaturnActivity"
+            android:exported="false" />
+        <activity
             android:name=".JupiterActivity"
             android:exported="false" />
         <activity

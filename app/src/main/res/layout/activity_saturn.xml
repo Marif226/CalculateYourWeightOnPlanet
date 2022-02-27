@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/planet_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturn"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/planet_picture"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:src="@drawable/saturn"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/planet_header" />
+
+    <TextView
+        android:id="@+id/id_planet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\tSaturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/black"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/planet_picture"
+        />
+
+    <TextView
+        android:id="@+id/planet_hyphen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" - It takes about 4 years to get on Saturn from Earth.\n
+- Average distance to Saturn in light-years is 0.00015165.\n
+-  Saturn has 83 moons. The main ones are Titan,Rhea,Enceladus,Mimas, and Tethys."
+        android:textColor="@color/white"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_planet_text"
+        />
+
+    <TextView
+        android:id="@+id/id_enter_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate your weight on Saturn:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/planet_hyphen"
+        />
+
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/input_view"
+        android:hint="your weight"
+        android:inputType="number"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_enter_weight"/>
+
+    <Button
+        android:id="@+id/calc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_margin="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weight_input"/>
+
+    <TextView
+        android:id="@+id/result_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calc_btn"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

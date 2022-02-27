@@ -35,5 +35,23 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, JupiterActivity::class.java)
             startActivity(intent)
         }
+
+        val btnSaturn = findViewById<Button>(R.id.btn_saturn)
+        btnSaturn.setOnClickListener {
+            val intent = Intent(this, SaturnActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnUranus = findViewById<Button>(R.id.btn_uranus)
+        btnUranus.setOnClickListener {
+            val intent = Intent(this, UranusActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnNeptune = findViewById<Button>(R.id.btn_neptune)
+        btnNeptune.setOnClickListener {
+            val intent = Intent(this, NeptuneActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

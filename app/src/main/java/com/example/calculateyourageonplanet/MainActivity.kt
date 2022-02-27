@@ -53,5 +53,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, NeptuneActivity::class.java)
             startActivity(intent)
         }
+
+        val btnSpacex = findViewById<Button>(R.id.btn_spacex)
+        btnSpacex.setOnClickListener {
+            val intent = Intent(this, SpacexActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculateYourAgeOnPlanet">
         <activity
+            android:name=".SpacexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Spacex"
+            android:exported="false" />
+        <activity
             android:name=".NeptuneActivity"
             android:exported="false" />
         <activity

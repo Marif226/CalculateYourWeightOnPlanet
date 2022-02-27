@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpacexActivity"
+    android:padding="10dp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/spacex_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SpaceX Project"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/id_spacex_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\tSpaceX's Mars program is a development program initiated by Elon Musk and SpaceX in order to facilitate the eventual colonization of Mars. The program includes fully reusable launch vehicles, human-rated spacecraft, on-orbit propellant tankers, rapid-turnaround launch/landing mounts, and local production of rocket fuel on Mars via in situ resource utilization (ISRU). SpaceX's aspirational goal has been to land the first humans on Mars by 2024, but in October 2020 Elon Musk named 2024 as a goal for an uncrewed mission. At the Axel Springer Award 2020 Elon Musk said that he is highly confident that the first crewed flights to Mars will happen in 2026."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/black"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spacex_header"
+        />
+
+    <ImageView
+        android:id="@+id/rocket"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/spacex"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_spacex_text"/>
+
+    <ImageView
+        android:id="@+id/mars_spacex"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/mars"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rocket"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
